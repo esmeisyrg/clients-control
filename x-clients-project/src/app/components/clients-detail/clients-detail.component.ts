@@ -18,8 +18,6 @@ export class ClientsDetailComponent implements OnInit {
   editingIndex: number | null = null;
   editedAddress: string = '';
 
-
-
   constructor(
     private route: ActivatedRoute,
     private clientService: ClientService,
