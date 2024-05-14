@@ -1,20 +1,21 @@
-# clients-control-project
+# Clients Control Project
 
-Visión general
-Este proyecto es una aplicación Angular con Bootstrap para el estilo visual. Está diseñado para gestionar y mostrar una lista de clientes para una empresa ficticia, "X-Enterprise". Los usuarios pueden ver una lista de clientes, buscar clientes específicos y ver información detallada sobre cada cliente, incluyendo direcciones y otros datos relevantes.
+## Overview
+This project is an Angular application styled with Bootstrap. It is designed to manage and display a list of clients for a fictional company, "X-Enterprise." Users can view a list of clients, search for specific clients, and view detailed information about each client, including addresses and other relevant data.
 
-Características
-Lista de Clientes: Muestra todos los clientes con información básica en un formato de cuadrícula.
-Funcionalidad de Búsqueda: Los usuarios pueden buscar clientes por nombre para encontrar rápidamente la información deseada.
-Detalle de Cliente: Al hacer clic en un cliente, los usuarios pueden ver detalles extendidos, como direcciones y opciones para gestionar la información del cliente.
-Tecnologías Utilizadas
-Angular: Framework de desarrollo para la construcción de la aplicación.
-Bootstrap: Framework de CSS para el diseño responsivo y estilizado de la aplicación.
-Angular Router: Para la navegación entre páginas y gestión de vistas.
-RxJS: Para la gestión de estados y datos reactivos.
-Requisitos
-Para ejecutar este proyecto necesitarás tener instalado:
+## Features
+- **Client List:** Displays all clients with basic information in a grid format.
+- **Search Functionality:** Users can search for clients by name to quickly find desired information.
+- **Client Detail:** Clicking on a client allows users to view extended details, such as addresses and options for managing client information.
 
-Node.js
-npm (viene instalado con Node.js)
-Angular CLI
+## Technologies Used
+- **Angular:** Development framework for building the application.
+- **Bootstrap:** CSS framework for responsive design and styling of the application.
+- **Angular Router:** For navigation between pages and view management.
+- **RxJS:** For state management and reactive data.
+
+## Requirements
+To run this project, you'll need to have the following installed:
+- Node.js
+- npm (comes installed with Node.js)
+- Angular CLI
