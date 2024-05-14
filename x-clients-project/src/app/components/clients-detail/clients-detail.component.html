@@ -1,0 +1,47 @@
+
+<div *ngIf="client; else noClient" class="container mt-5">
+
+        <div class="mb-3">
+            <button (click)="goBack()" class="btn btn-secondary">Back</button>
+        </div>
+    
+    <div class="row justify-content-center" style="gap: 20px;">
+        <div class="col-md-6">
+            <div class="d-flex justify-content-center">
+                <img [src]="client.image" alt="Profile Image" class="profile-image img-fluid rounded-circle mb-3 d-flex" alt="...">
+
+            </div>
+            <h2>{{ client.name }}</h2>
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let address of client.addresses; let i = index">
+                    <span *ngIf="editingIndex !== i">{{ address }}</span>
+                    <input *ngIf="editingIndex === i" [(ngModel)]="editedAddress" class="form-control">
+                    <div class="container-crud" *ngIf="editingIndex !== i">
+                        <button class="btn btn-primary btn-sm mr-2" (click)="editAddress(i, address)">Edit</button>
+                        <button class="btn btn-danger btn-sm" (click)="deleteAddress(i)">Delete</button>
+                    </div>
+                    <div class="container-crud" *ngIf="editingIndex === i">
+                        <button class="btn btn-success btn-sm " (click)="saveEditedAddress()">Save</button>
+                        <button class="btn btn-secondary btn-sm" (click)="cancelEdit()">Cancel</button>
+                    </div>
+                </li>
+            </ul>
+            <div class="input-group my-3">
+                <input [(ngModel)]="newAddress" placeholder="Add new address" class="form-control">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" (click)="addAddress()">Add Address</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<ng-template #noClient>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <p>No client found.</p>
+            </div>
+        </div>
+    </div>
+</ng-template>
+
