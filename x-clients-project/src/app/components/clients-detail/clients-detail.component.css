@@ -1,0 +1,24 @@
+.container-crud{
+    display: flex;
+    gap: 0.8rem;
+    padding: 1rem 0rem;
+}
+
+.input-group {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.container.mt-5 > .mb-3 {
+    width: 100%;
+    display: flex;
+    justify-content: start;
+}
+
+.profile-image{
+    object-fit: cover;
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid rgba(85, 173, 231, 0.938);
+    box-shadow: 0 0 10px rgba(85, 173, 231, 0.938);
+}
